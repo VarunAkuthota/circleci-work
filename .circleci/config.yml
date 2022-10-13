@@ -1,1 +1,7 @@
-#CIRCLECI
+jobs:
+  test:
+    docker:
+      - image: cimg/node:18.10.0
+    steps:
+      - checkout
+      - run: node --version
